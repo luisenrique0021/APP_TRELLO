@@ -1,0 +1,23 @@
+{
+  "posts": [
+    {
+      "id": 2,
+      "title": "Aprendiendo json-server",
+      "author": "Luis CV"
+    },
+    {
+      "id": 2,
+      "title": "Aprendiendo json-server",
+      "author": "Luis CV"
+    },
+    {
+      "id": 2,
+      "title": "Aprendiendo json-server",
+      "author": "Luis CV"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

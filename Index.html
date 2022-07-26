@@ -9,12 +9,30 @@
 </head>
 <body>
 
+    <!-- <button class="btn" data-target="#modal1">Modal 1</button> -->
+
+    <div class="modal" id="modal1">
+        <div class="header">
+            <div class="title">Add Task</div>
+            <button class="close-modal">&times;</button>   
+        </div>
+        <div class="body">
+            <input type="text" id="todo_input">
+            <input type="submit" value="Añadir Tarea" id="todo_submit">
+        </div>
+    </div>
+
+   
+    
     <!-- todo -->
+    <div style="text-align:center;">
+        <button id="add_btn" data-target="#modal1">+ Añadir Tarea</button>
+    </div>    
     <div class="todo-container">
-        <div class="status">
+        <div class="status" id="no_status">
             <h1>Tarea por hacer</h1>
-            <button id="add_btn">+ Añadir Tarea</button>
-            <div class="todo" draggable="true">
+            
+            <!-- <div class="todo" draggable="true">
                 <div>Comprar una pizza</div>
                 <span class=""close>&times;</span>
             </div>
@@ -25,7 +43,7 @@
             <div class="todo" draggable="true">
                 <div>Ir a cine</div>
                 <span class=""close>&times;</span>
-            </div>
+            </div> -->
         </div>
         <div class="status">
             <h1>Tarea en proceso</h1>
@@ -34,6 +52,8 @@
             <h1>Tarea finalizada</h1>
         </div>    
     </div>
+
+    <div id="overlay"></div>
 
     <script src="script.js"></script>
 </body>
