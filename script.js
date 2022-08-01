@@ -88,7 +88,9 @@ todo_submit.addEventListener("click", createTodo);
 function createTodo(){
     const todo_div = document.createElement("div");
     const input_val = document.getElementById("todo_input").value;
+    //const input_valu = document.getElementById("todo_input2").value;
     const txt = document.createTextNode(input_val);
+    //const txt2 = document.createTextNode(input_valu);
 
     todo_div.appendChild(txt);
     todo_div.classList.add("todo");
@@ -115,6 +117,7 @@ function createTodo(){
     todo_div.addEventListener("dragend", dragEnd);
 
     document.getElementById("todo_input").value = "";
+    //document.getElementById("todo_input2").value = "";
     modal1.classList.remove("active");
     overlay.classList.remove("active");
 }
